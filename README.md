@@ -16,6 +16,7 @@ losetup /dev/loop0 /var/drbd-meta
 ```bash
 vi /etc/drbd.d/drbd_res0.res
 ```
+```bash
 resource drbd_res0 {
 syncer {rate 50M;}
 device     /dev/drbd0;
@@ -28,6 +29,7 @@ on linux2 {
     address    172.31.34.113:7788;
 }
 }
+```
 
 ### 5 Create the meta-data disk for our specific resource(both nodes)
 ```bash
